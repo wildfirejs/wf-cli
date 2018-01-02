@@ -1,0 +1,69 @@
+{
+  "name": "wf-cli",
+  "version": "0.0.0",
+  "description": "A simple CLI for scaffolding wildfire plugins.",
+  "preferGlobal": true,
+  "bin": {
+    "wf": "bin/wf",
+    "wf-init": "bin/wf-init",
+    "wf-list": "bin/wf-list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildfirejs/wf-cli.git"
+  },
+  "keywords": [
+    "wildfire",
+    "cli"
+  ],
+  "contributors": [
+    {
+      "name": "Evan You",
+      "url": "http://evanyou.me",
+      "role": "Original Author"
+    },
+    {
+      "name": "Kang Cheng",
+      "email": "me@chengkang.pw",
+      "url": "http://chengkang.me",
+      "role": "Modifier"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wildfirejs/wf-cli/issues"
+  },
+  "homepage": "https://github.com/wildfirejs/wf-cli#readme",
+  "dependencies": {
+    "async": "^2.4.0",
+    "chalk": "^2.1.0",
+    "commander": "^2.9.0",
+    "consolidate": "^0.14.0",
+    "download-git-repo": "^1.0.1",
+    "handlebars": "^4.0.5",
+    "inquirer": "^3.3.0",
+    "metalsmith": "^2.1.0",
+    "minimatch": "^3.0.0",
+    "multimatch": "^2.1.0",
+    "ora": "^1.3.0",
+    "read-metadata": "^1.0.0",
+    "request": "^2.67.0",
+    "rimraf": "^2.5.0",
+    "semver": "^5.1.0",
+    "tildify": "^1.2.0",
+    "uid": "0.0.2",
+    "user-home": "^2.0.0",
+    "validate-npm-package-name": "^3.0.0",
+    "coffee-script": "1.12.7"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^3.19.0",
+    "eslint-plugin-vue-libs": "^1.2.1",
+    "execa": "^0.8.0",
+    "mocha": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
