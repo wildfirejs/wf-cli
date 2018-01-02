@@ -53,7 +53,7 @@ If you would like to download from a private repository use the `--clone` flag a
 Instead of a GitHub repo, you can also use a template on your local file system:
 
 ``` bash
-vue init ~/fs/path/to-custom-template my-project
+wf init ~/fs/path/to-custom-template my-project
 ```
 
 ### Writing Custom Templates from Scratch
@@ -171,9 +171,9 @@ The `skipInterpolation` field in the metadata file should be a [minimatch glob p
 
 #### Metalsmith
 
-`vue-cli` uses [metalsmith](https://github.com/segmentio/metalsmith) to generate the project.
+`wf-cli` uses [metalsmith](https://github.com/segmentio/metalsmith) to generate the project.
 
-You may customize the metalsmith builder created by vue-cli to register custom plugins.
+You may customize the metalsmith builder created by wf-cli to register custom plugins.
 
 ```js
 {
@@ -234,7 +234,7 @@ Arguments:
 
 - `helpers`: some helpers you can use to log results.
   - `chalk`: the `chalk` module
-  - `logger`: [the built-in vue-cli logger](/lib/logger.js)
+  - `logger`: [the built-in wf-cli logger](/lib/logger.js)
   - `files`: An array of generated files
   ```js
   {
@@ -248,20 +248,20 @@ Arguments:
 
 ### Installing a specific template version
 
-`vue-cli` uses the tool [`download-git-repo`](https://github.com/flipxfx/download-git-repo) to download the official templates used. The `download-git-repo` tool allows you to indicate a specific branch for a given repository by providing the desired branch name after a pound sign (`#`).
+`wf-cli` uses the tool [`download-git-repo`](https://github.com/flipxfx/download-git-repo) to download the official templates used. The `download-git-repo` tool allows you to indicate a specific branch for a given repository by providing the desired branch name after a pound sign (`#`).
 
 The format needed for a specific official template is:
 
 ```
-vue init '<template-name>#<branch-name>' <project-name>
+wf init '<template-name>#<branch-name>' <project-name>
 ```
 
 Example:
 
-Installing the [`1.0` branch](https://github.com/vuejs-templates/webpack-simple/tree/1.0) of the webpack-simple vue template:
+Installing the [`1.0` branch](https://github.com/wildfire-plugin-templates/first/tree/1.0) of the template `first`:
 
 ```
-vue init 'webpack-simple#1.0' mynewproject
+wf init 'first#1.0' mynewproject
 ```
 
 _Note_: The surrounding quotes are necessary on zsh shells because of the special meaning of the `#` character.
